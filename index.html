@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | The Minums - Your Daily Refreshment</title>
+    <title>The Minums | Your Daily Refreshment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    </head>
+</head>
 <body>
 
     <header class="main-header">
         <div class="logo">
-            <h1>The Minums 🥤</h1>
+            <a href="index.html"><h1>The Minums <span>🥤</span></h1></a>
         </div>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="listing.html">Our Drinks</a></li>
+                <li><a href="listing.html">Our Menu</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Locations</a></li>
             </ul>
         </nav>
         <div class="user-actions">
-            <a href="cart.html" class="cart-link">🛒 Cart (0)</a>
-            <a href="admin.html" class="admin-link">⚙️ Admin</a>
+            <a href="cart.html" class="cart-link" aria-label="View shopping cart">
+                <span class="icon">🛒</span> Cart (<span id="cart-item-count">0</span>)
+            </a>
+            <a href="admin.html" class="admin-link" aria-label="Access admin panel">
+                <span class="icon">⚙️</span> Admin
+            </a>
         </div>
     </header>
 
@@ -31,60 +36,118 @@
         <section class="hero-section minums-hero">
             <div class="hero-content">
                 <h2>Sip, Smile, Repeat.</h2>
-                <p>Handcrafted refreshments delivered to your door.</p>
+                <p>Discover handcrafted refreshments, delivered fresh to your door. <br>Your perfect day starts here.</p>
                 <a href="listing.html" class="cta-button primary-btn">Explore Our Menu</a>
             </div>
             </section>
 
-        <section class="featured-products">
-            <h3>✨ Our Best Sellers</h3>
+        <section class="featured-products section-spacing">
+            <h3>✨ Our Signature Sips</h3>
             <div class="product-grid">
                 <article class="product-card">
-                    <img src="images/minums-coffee.jpg" alt="Signature Coffee">
+                    <figure>
+                        <img src="images/minums-coffee.jpg" alt="Signature Cold Brew">
+                        <figcaption>Rich & Invigorating</figcaption>
+                    </figure>
                     <h4>Signature Cold Brew</h4>
-                    <p class="description">Strong, smooth, and perfectly chilled.</p>
+                    <p class="description">Strong, smooth, and perfectly chilled for your daily boost.</p>
                     <p class="price">$5.50</p>
-                    <a href="detail.html" class="view-details">View Details</a>
-                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="detail.html" class="view-details button-secondary">View Details</a>
+                    <button class="add-to-cart-btn button-primary">Add to Cart</button>
                 </article>
 
                 <article class="product-card">
-                    <img src="images/minums-smoothie.jpg" alt="Tropical Smoothie">
+                    <figure>
+                        <img src="images/minums-smoothie.jpg" alt="Tropical Sunset Smoothie">
+                        <figcaption>Sweet & Refreshing</figcaption>
+                    </figure>
                     <h4>Tropical Sunset Smoothie</h4>
-                    <p class="description">A blend of mango, pineapple, and passion fruit.</p>
+                    <p class="description">A vibrant blend of exotic fruits, sunshine in a glass.</p>
                     <p class="price">$6.00</p>
-                    <a href="detail.html" class="view-details">View Details</a>
-                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="detail.html" class="view-details button-secondary">View Details</a>
+                    <button class="add-to-cart-btn button-primary">Add to Cart</button>
                 </article>
 
                 <article class="product-card">
-                    <img src="images/minums-tea.jpg" alt="Calming Herbal Tea">
+                    <figure>
+                        <img src="images/minums-tea.jpg" alt="Calming Chamomile Tea">
+                        <figcaption>Soothing & Relaxing</figcaption>
+                    </figure>
                     <h4>Calming Chamomile Tea</h4>
-                    <p class="description">Natural and soothing, perfect for winding down.</p>
+                    <p class="description">Natural and soothing, perfect for winding down after a long day.</p>
                     <p class="price">$4.00</p>
-                    <a href="detail.html" class="view-details">View Details</a>
-                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="detail.html" class="view-details button-secondary">View Details</a>
+                    <button class="add-to-cart-btn button-primary">Add to Cart</button>
                 </article>
             </div>
         </section>
 
-        <section class="value-proposition minums-usp">
-            <h3>Why The Minums?</h3>
-            <div class="usp-list">
-                <div class="usp-item">🌿 <p>Only Fresh Ingredients</p></div>
-                <div class="usp-item">🛵 <p>Fast Local Delivery</p></div>
-                <div class="usp-item">♻️ <p>Eco-Friendly Packaging</p></div>
+        <section class="value-proposition minums-usp section-spacing">
+            <h3>Why Choose The Minums?</h3>
+            <div class="usp-grid">
+                <div class="usp-item">
+                    <span class="usp-icon">🌿</span>
+                    <h4>Fresh Ingredients</h4>
+                    <p>We source only the finest, natural ingredients for every sip.</p>
+                </div>
+                <div class="usp-item">
+                    <span class="usp-icon">🛵</span>
+                    <h4>Fast & Reliable Delivery</h4>
+                    <p>Your favorite drinks, quickly and carefully delivered to your door.</p>
+                </div>
+                <div class="usp-item">
+                    <span class="usp-icon">♻️</span>
+                    <h4>Eco-Friendly Packaging</h4>
+                    <p>Committed to sustainability with every eco-conscious container.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action section-spacing">
+            <div class="cta-banner">
+                <h3>Ready for a Refreshing Experience?</h3>
+                <p>Join The Minums family and redefine your daily hydration.</p>
+                <a href="listing.html" class="cta-button primary-btn">Order Now</a>
             </div>
         </section>
 
     </main>
 
     <footer class="main-footer">
-        <p>&copy; 2025 The Minums. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#">FAQs</a> | 
-            <a href="#">Delivery Policy</a> |
-            <a href="#">Careers</a>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>The Minums</h3>
+                <p>Your Daily Refreshment, Delivered.</p>
+            </div>
+            <div class="footer-links-group">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listing.html">Our Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-group">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Delivery Info</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+                    <a href="#" aria-label="Twitter"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Minums. All rights reserved.</p>
         </div>
     </footer>
 </body>
